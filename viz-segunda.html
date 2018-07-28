@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"> 
+<title>Audiencia</title>
+</head>
+<body>
+<!--Nada más que p5.js para dibujar en el body de esta página-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.6.0/p5.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.6.0/addons/p5.dom.min.js"></script>
+<script>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+function setup(){
+  var canvas = createCanvas(windowWidth,500);
+  canvas.position(0,0)
+  noStroke();
+  smooth();
+}
+function draw(){
+  background(44,156,233);
+    fill(255);
+      ellipse(((windowWidth/6)*1),270,10,10);
+      textAlign(CENTER);
+      text("TEMPORADA 13",((windowWidth/6)*1),300);
+      
+     fill(255);
+      ellipse(((windowWidth/6)*2),250,15,15);
+         textAlign(CENTER);
+      text("TEMPORADA 5",((windowWidth/6)*2),300);
+      
+      fill(255);
+      ellipse(((windowWidth/6)*3),200,30,30);
+      textAlign(CENTER);
+      text("TEMPORADA 1",((windowWidth/6)*3),300);
+      
+      fill(255);
+      ellipse(((windowWidth/6)*4),200,30,30);
+      textAlign(CENTER);
+      text("TEMPORADA 14",((windowWidth/6)*4),300);
+    
+      fill(255);
+      ellipse(((windowWidth/6)*5),150,45,45);
+      textAlign(CENTER);
+      text("TEMPORADA 12",((windowWidth/6)*5),300);
+} 
+function windowResized() {
+  resizeCanvas(windowWidth, 500);
+}   
+</script>
+</body>
+</html>

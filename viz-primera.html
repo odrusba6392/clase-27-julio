@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"> 
+<title>Episodios</title>
+</head>
+<body>
+<!--Nada más que p5.js para dibujar en el body de esta página-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.6.0/p5.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.6.0/addons/p5.dom.min.js"></script>
+<script>
+    
+
+        
+        
+function setup(){
+  var canvas = createCanvas(windowWidth,500);
+  canvas.position(0,0)
+  noStroke();
+  smooth();
+  noLoop();
+            var simpsons = [
+{
+temporada: "1"
+numero_episodios: 13
+audiencia: 13.4
+},
+{
+temporada: "3"
+numero_episodios: 24
+audiencia: 12
+},
+{
+temporada: "5"
+numero_episodios: 22
+audiencia: 12.5
+},
+{
+temporada: "6"
+numero_episodios: 25
+audiencia: 9
+},
+{
+temporada: "7"
+numero_episodios: 25
+audiencia: 8
+},
+{
+temporada: "8"
+numero_episodios: 25
+audiencia: 8.6
+},
+{
+temporada: "9"
+numero_episodios: 25
+audiencia: 9.1
+},
+{
+temporada: "12"
+numero_episodios: 21
+audiencia: 14.7
+},
+{
+temporada: "13"
+numero_episodios: 22
+audiencia: 12.4
+},
+{
+temporada: "14"
+numero_episodios: 22
+audiencia: 13.4
+}
+]
+}
+
+    
+function draw(){
+  background(255,59,151);
+    textAlign(CENTER);
+    textsize(11);
+  fill(255)
+    text(
+    simpsons[0].temporada,
+    width/(simpsons.length+1)*(0+1),
+        height/1.8
+    );
+    
+    textSize(2.5 * simpsons[0].temporada);
+    text(simpsons[0].temporadas, width/(simpsons.lenght+1)*(0+1), height/2);
+} 
+    
+    
+    
+    
+function windowResized() {
+  resizeCanvas(windowWidth, 500);
+}   
+</script>
+</body>
+</html>
